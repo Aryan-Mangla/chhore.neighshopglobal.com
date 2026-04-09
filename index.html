@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Shop premium medical scrubs, lab coats, and healthcare apparel for women. Designed for comfort during long shifts — breathable, durable, and stylish." />
+  <title>MedWear | Premium Medical Apparel for Healthcare Professionals</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,600;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar" id="announcement-bar">
+    <div class="announcement-inner">
+      <span>🚚 Free shipping on orders above ₹999</span>
+      <span class="divider">|</span>
+      <span>⭐ 4.8 Star Rated by 1,00,000+ Healthcare Heroes</span>
+      <span class="divider">|</span>
+      <span>🎁 Refer & Earn ₹200 | <a href="#refer">Learn More</a></span>
+    </div>
+    <button class="announcement-close" id="close-announcement" aria-label="Close announcement">✕</button>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="#" id="logo-link">
+          <span class="logo-icon">✚</span>
+          <span class="logo-text">MedWear</span>
+        </a>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li class="nav-item has-dropdown">
+          <a href="#women">Women</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <div class="dropdown-col">
+                <h4>Scrubs</h4>
+                <a href="#scrubs">V-Neck Scrubs</a>
+                <a href="#scrubs">Nurse Scrubs</a>
+                <a href="#scrubs">Mandarin Collar</a>
+                <a href="#scrubs">Long Sleeve Scrubs</a>
+                <a href="#scrubs">ecoflex™ Joggers</a>
+              </div>
+              <div class="dropdown-col">
+                <h4>Apparel</h4>
+                <a href="#apparel">Lab Coat Aprons</a>
+                <a href="#apparel">DRIFT Jacket</a>
+                <a href="#apparel">Underscrubs</a>
+                <a href="#apparel">T-Shirts</a>
+              </div>
+              <div class="dropdown-col">
+                <h4>Accessories</h4>
+                <a href="#accessories">Stethoscopes</a>
+                <a href="#accessories">Scrub Cap</a>
+                <a href="#accessories">Hijab</a>
+                <a href="#accessories">Plus Size</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item has-dropdown">
+          <a href="#men">Men</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-grid">
+              <div class="dropdown-col">
+                <h4>Scrubs</h4>
+                <a href="#men">V-Neck Scrubs</a>
+                <a href="#men">Mandarin Collar</a>
+                <a href="#men">Long Sleeve Scrubs</a>
+                <a href="#men">ecoflex™ Joggers</a>
+              </div>
+              <div class="dropdown-col">
+                <h4>Apparel</h4>
+                <a href="#men">Lab Coat Aprons</a>
+                <a href="#men">DRIFT Jacket</a>
+                <a href="#men">Underscrubs</a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item"><a href="#ecoflex" class="nav-badge">ecoflex™</a></li>
+        <li class="nav-item"><a href="#lab-coats">Lab Coats</a></li>
+        <li class="nav-item"><a href="#bulk">Bulk Orders</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="nav-icon-btn" id="search-btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon-btn" id="account-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </button>
+        <button class="nav-icon-btn cart-btn" id="cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="search-overlay">
+      <div class="search-container">
+        <input type="search" id="search-input" placeholder="Search scrubs, lab coats, accessories..." />
+        <button class="search-close" id="search-close" aria-label="Close search">✕</button>
+      </div>
+      <div class="search-suggestions">
+        <span>Popular:</span>
+        <a href="#scrubs">V-Neck Scrubs</a>
+        <a href="#scrubs">Nurse Sets</a>
+        <a href="#lab-coats">Lab Coats</a>
+        <a href="#ecoflex">ecoflex™</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          New Collection 2025
+        </div>
+        <h1 class="hero-title">
+          Crafted for <br />
+          <span class="hero-title-accent">Healthcare Heroes</span>
+        </h1>
+        <p class="hero-description">
+          Premium medical scrubs and apparel designed with relentless comfort and modern style — because you deserve to look as great as you perform.
+        </p>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>4.8★</strong>
+            <span>Avg Rating</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>1L+</strong>
+            <span>Happy Doctors</span>
+          </div>
+          <div class="hero-stat-divider"></div>
+          <div class="hero-stat">
+            <strong>50+</strong>
+            <span>Color Options</span>
+          </div>
+        </div>
+        <div class="hero-cta-group">
+          <a href="#products" class="btn-primary" id="hero-shop-btn">Shop Women's Collection</a>
+          <a href="#features" class="btn-outline" id="hero-learn-btn">Our Technology</a>
+        </div>
+        <div class="hero-tags">
+          <span class="tag">✓ Super-Soft Fabric</span>
+          <span class="tag">✓ Breathable</span>
+          <span class="tag">✓ 4-Way Stretch</span>
+          <span class="tag">✓ Featherlight</span>
+        </div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image-bg"></div>
+        <img src="hero.png" alt="Healthcare professional in premium MedWear scrubs" class="hero-img" id="hero-img" />
+        <div class="hero-floating-card">
+          <div class="floating-card-icon">🌟</div>
+          <div class="floating-card-text">
+            <strong>Best Seller</strong>
+            <span>Classic V-Neck Scrub</span>
+          </div>
+          <div class="floating-card-price">₹1,099</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-cue">
+      <span>Scroll to explore</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Feature / Trust Badges -->
+  <section class="trust-strip" id="trust">
+    <div class="trust-container">
+      <div class="trust-item">
+        <div class="trust-icon">🚀</div>
+        <div class="trust-text">
+          <strong>Fast Delivery</strong>
+          <span>Free shipping over ₹999</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🔄</div>
+        <div class="trust-text">
+          <strong>Easy Returns</strong>
+          <span>7-day hassle-free returns</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">🧵</div>
+        <div class="trust-text">
+          <strong>Premium Fabric</strong>
+          <span>Tested for 100+ washes</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💬</div>
+        <div class="trust-text">
+          <strong>24/7 Support</strong>
+          <span>Dedicated helpline</span>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon">💳</div>
+        <div class="trust-text">
+          <strong>EMI Available</strong>
+          <span>From ₹433/month</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filters & Product Grid -->
+  <section class="products-section" id="products">
+    <div class="products-container">
+      <div class="section-header">
+        <div class="section-label">Women's Collection</div>
+        <h2 class="section-title">Shop By Style</h2>
+        <p class="section-desc">From the ICU to the clinic — find your perfect fit in 50+ curated colors.</p>
+      </div>
+
+      <!-- Category Tabs -->
+      <div class="category-tabs" id="category-tabs">
+        <button class="tab-btn active" data-filter="all" id="tab-all">All</button>
+        <button class="tab-btn" data-filter="scrubs" id="tab-scrubs">Scrubs</button>
+        <button class="tab-btn" data-filter="lab-coat" id="tab-labcoat">Lab Coats</button>
+        <button class="tab-btn" data-filter="accessories" id="tab-accessories">Accessories</button>
+        <button class="tab-btn" data-filter="apparel" id="tab-apparel">Apparel</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="product-grid">
+
+        <!-- Product Card 1 -->
+        <div class="product-card" data-category="scrubs" id="product-1">
+          <div class="product-image-wrap">
+            <img src="product-navy.png" alt="Classic Women's V-Neck Navy Scrub" class="product-img" loading="lazy" />
+            <div class="product-badge bestseller">Bestseller</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="1" id="qv-1">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="1" id="wl-1">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">Classic</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.8</span>
+              </div>
+            </div>
+            <h3 class="product-name">Classic Women's V-Neck Scrub</h3>
+            <p class="product-desc">Navy Blue · 5 Pockets · Super-Soft Cotton</p>
+            <div class="product-colors">
+              <span class="color-dot navy active" title="Navy" style="background:#1c3a5e;"></span>
+              <span class="color-dot wine" title="Wine" style="background:#7c2035;"></span>
+              <span class="color-dot black" title="Black" style="background:#1a1a1a;"></span>
+              <span class="color-dot fg" title="Forest Green" style="background:#2d5a27;"></span>
+              <span class="color-more">+9</span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹1,099</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹433/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="1" data-name="Classic Women's V-Neck Scrub" data-price="1099" id="atc-1">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="product-card" data-category="scrubs" id="product-2">
+          <div class="product-image-wrap">
+            <img src="product-wine.png" alt="Classic Women's V-Neck Wine Scrub" class="product-img" loading="lazy" />
+            <div class="product-badge bestseller">Bestseller</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="2" id="qv-2">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="2" id="wl-2">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">Classic</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.9</span>
+              </div>
+            </div>
+            <h3 class="product-name">Classic Women's V-Neck Scrub</h3>
+            <p class="product-desc">Wine · 5 Pockets · Breathable Weave</p>
+            <div class="product-colors">
+              <span class="color-dot wine active" title="Wine" style="background:#7c2035;"></span>
+              <span class="color-dot navy" title="Navy" style="background:#1c3a5e;"></span>
+              <span class="color-dot maroon" title="Maroon" style="background:#800000;"></span>
+              <span class="color-dot mauve" title="Mauve" style="background:#9e7b9b;"></span>
+              <span class="color-more">+8</span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹1,099</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹433/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="2" data-name="Classic Women's V-Neck Scrub (Wine)" data-price="1099" id="atc-2">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 3 -->
+        <div class="product-card" data-category="scrubs" id="product-3">
+          <div class="product-image-wrap">
+            <img src="product-forest.png" alt="Mandarin Collar Women's Scrub Forest Green" class="product-img" loading="lazy" />
+            <div class="product-badge new">New Arrival</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="3" id="qv-3">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="3" id="wl-3">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type ecoflex">ecoflex™</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.7</span>
+              </div>
+            </div>
+            <h3 class="product-name">Mandarin Collar Scrub Set</h3>
+            <p class="product-desc">Forest Green · 9 Pockets · 4-Way ecoflex™</p>
+            <div class="product-colors">
+              <span class="color-dot fg active" title="Forest Green" style="background:#2d5a27;"></span>
+              <span class="color-dot olive" title="Olive" style="background:#6b7c49;"></span>
+              <span class="color-dot navy" title="Navy" style="background:#1c3a5e;"></span>
+              <span class="color-dot black" title="Black" style="background:#1a1a1a;"></span>
+              <span class="color-more">+6</span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹1,349</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹556/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="3" data-name="Mandarin Collar Scrub Set (Forest Green)" data-price="1349" id="atc-3">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 4 -->
+        <div class="product-card" data-category="scrubs" id="product-4">
+          <div class="product-image-wrap">
+            <img src="product-pink.png" alt="Classic Women's Nurse Scrub Pastel Pink" class="product-img" loading="lazy" />
+            <div class="product-badge limited">Limited</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="4" id="qv-4">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="4" id="wl-4">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">Nurse Series</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.9</span>
+              </div>
+            </div>
+            <h3 class="product-name">Classic Nurse Scrub Set</h3>
+            <p class="product-desc">Pastel Pink · 5 Pockets · SuperSoft™</p>
+            <div class="product-colors">
+              <span class="color-dot pink active" title="Pastel Pink" style="background:#f4a5b5;"></span>
+              <span class="color-dot lilac" title="Pastel Lilac" style="background:#c9b1d6;"></span>
+              <span class="color-dot ceil" title="Ceil Blue" style="background:#8fa8c8;"></span>
+              <span class="color-more">+5</span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹1,199</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹489/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="4" data-name="Classic Nurse Scrub Set (Pastel Pink)" data-price="1199" id="atc-4">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 5 - Lab Coat -->
+        <div class="product-card" data-category="lab-coat" id="product-5">
+          <div class="product-image-wrap">
+            <img src="product-labcoat.png" alt="Chief Women's Lab Coat White" class="product-img" loading="lazy" />
+            <div class="product-badge bestseller">Bestseller</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="5" id="qv-5">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="5" id="wl-5">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">Chief Series</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.8</span>
+              </div>
+            </div>
+            <h3 class="product-name">Chief Women's Lab Coat</h3>
+            <p class="product-desc">White · Full Length · Anti-Wrinkle Finish</p>
+            <div class="product-colors">
+              <span class="color-dot white active" title="White" style="background:#f5f5f5; border:1px solid #ddd;"></span>
+              <span class="color-dot ceil" title="Ceil Blue" style="background:#8fa8c8;"></span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹1,799</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹756/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="5" data-name="Chief Women's Lab Coat" data-price="1799" id="atc-5">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 6 - Accessories -->
+        <div class="product-card" data-category="accessories" id="product-6">
+          <div class="product-image-wrap">
+            <img src="product-stethoscope.png" alt="6Sense Stethoscope Rose Gold" class="product-img" loading="lazy" />
+            <div class="product-badge new">New</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="6" id="qv-6">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="6" id="wl-6">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">6Sense™</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.9</span>
+              </div>
+            </div>
+            <h3 class="product-name">6Sense™ Stethoscope</h3>
+            <p class="product-desc">Rose Gold · Dual Head · Noise-Cancelling</p>
+            <div class="product-colors">
+              <span class="color-dot rg active" title="Rose Gold" style="background:#b76e79;"></span>
+              <span class="color-dot black" title="Black" style="background:#1a1a1a;"></span>
+              <span class="color-dot white" title="White" style="background:#f5f5f5; border:1px solid #ddd;"></span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹2,499</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹899/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="6" data-name="6Sense™ Stethoscope (Rose Gold)" data-price="2499" id="atc-6">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 7 - DRIFT Jacket -->
+        <div class="product-card" data-category="apparel" id="product-7">
+          <div class="product-image-wrap">
+            <img src="product-jacket.png" alt="DRIFT Women's Jacket Heather Grey" class="product-img" loading="lazy" />
+            <div class="product-badge">New Season</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="7" id="qv-7">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="7" id="wl-7">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type">DRIFT™</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.7</span>
+              </div>
+            </div>
+            <h3 class="product-name">DRIFT Women's Jacket</h3>
+            <p class="product-desc">Warm Grey · Water-Resistant · Zip Pockets</p>
+            <div class="product-colors">
+              <span class="color-dot hg active" title="Heather Grey" style="background:#9e9e9e;"></span>
+              <span class="color-dot navy" title="Navy" style="background:#1c3a5e;"></span>
+              <span class="color-dot black" title="Black" style="background:#1a1a1a;"></span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹2,199</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹799/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="7" data-name="DRIFT Women's Jacket" data-price="2199" id="atc-7">Add to Bag</button>
+          </div>
+        </div>
+
+        <!-- Product Card 8 - ecoflex Jogger -->
+        <div class="product-card" data-category="scrubs" id="product-8">
+          <div class="product-image-wrap">
+            <img src="product-joggers.png" alt="ecoflex Women's Joggers Eucalyptus" class="product-img" loading="lazy" />
+            <div class="product-badge">Trending</div>
+            <div class="product-overlay">
+              <button class="quick-view-btn" data-product="8" id="qv-8">Quick View</button>
+              <button class="wishlist-btn" aria-label="Add to wishlist" data-product="8" id="wl-8">♡</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <div class="product-meta">
+              <span class="product-type ecoflex">ecoflex™</span>
+              <div class="product-rating">
+                <span class="stars">★★★★★</span>
+                <span class="rating-num">4.8</span>
+              </div>
+            </div>
+            <h3 class="product-name">ecoflex™ Women's Joggers</h3>
+            <p class="product-desc">Eucalyptus · Ultra-Stretch · 4-Pocket</p>
+            <div class="product-colors">
+              <span class="color-dot euc active" title="Eucalyptus" style="background:#44a08d;"></span>
+              <span class="color-dot navy" title="Navy" style="background:#1c3a5e;"></span>
+              <span class="color-dot black" title="Black" style="background:#1a1a1a;"></span>
+              <span class="color-dot lilac" title="Lilac" style="background:#c9b1d6;"></span>
+              <span class="color-more">+4</span>
+            </div>
+            <div class="product-price-row">
+              <div class="price-group">
+                <span class="product-price">₹899</span>
+                <span class="price-incl">Incl. of taxes</span>
+              </div>
+              <span class="emi-tag">or ₹356/mo</span>
+            </div>
+            <button class="add-to-cart-btn" data-id="8" data-name="ecoflex™ Women's Joggers" data-price="899" id="atc-8">Add to Bag</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="products-footer">
+        <a href="#all-products" class="btn-outline-purple" id="view-all-btn">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ecoflex Technology Section -->
+  <section class="ecoflex-section" id="ecoflex">
+    <div class="ecoflex-container">
+      <div class="ecoflex-content">
+        <div class="section-label light">Our Signature Technology</div>
+        <h2 class="ecoflex-title">Meet <span>ecoflex™</span></h2>
+        <p class="ecoflex-desc">Engineered for the demands of healthcare professionals. Our proprietary ecoflex™ fabric offers unmatched performance in the most demanding environments.</p>
+        <div class="ecoflex-features">
+          <div class="ecoflex-feature">
+            <div class="ef-icon">🌿</div>
+            <div class="ef-text">
+              <strong>Eco-Friendly</strong>
+              <span>Sustainable & biodegradable fibers</span>
+            </div>
+          </div>
+          <div class="ecoflex-feature">
+            <div class="ef-icon">⚡</div>
+            <div class="ef-text">
+              <strong>4-Way Stretch</strong>
+              <span>Full range of motion, all day</span>
+            </div>
+          </div>
+          <div class="ecoflex-feature">
+            <div class="ef-icon">💧</div>
+            <div class="ef-text">
+              <strong>Moisture-Wicking</strong>
+              <span>Stays dry during long shifts</span>
+            </div>
+          </div>
+          <div class="ecoflex-feature">
+            <div class="ef-icon">🧺</div>
+            <div class="ef-text">
+              <strong>100-Wash Tested</strong>
+              <span>Retains color & shape longer</span>
+            </div>
+          </div>
+        </div>
+        <a href="#products" class="btn-primary-white" id="ecoflex-shop-btn">Shop ecoflex™ Collection</a>
+      </div>
+      <div class="ecoflex-visual">
+        <div class="ecoflex-cards">
+          <div class="ef-card ef-card-1">
+            <span class="ef-card-icon">🌸</span>
+            <strong>2-Way Stretch</strong>
+            <span>Perfect for everyday comfort</span>
+          </div>
+          <div class="ef-card ef-card-2">
+            <span class="ef-card-icon">⚡</span>
+            <strong>4-Way Stretch</strong>
+            <span>Ideal for active procedures</span>
+          </div>
+          <div class="ef-card ef-card-3">
+            <span class="ef-card-icon">👟</span>
+            <strong>Jogger Bottoms</strong>
+            <span>Relaxed fit, professional look</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & Services Section -->
+  <section class="features-section" id="features">
+    <div class="features-container">
+      <div class="section-header">
+        <div class="section-label">Why Choose MedWear</div>
+        <h2 class="section-title">Built Different.</h2>
+        <p class="section-desc">Every stitch is intentional. Every pocket, purposeful.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card" id="feature-1">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🏥</div>
+          </div>
+          <h3>Clinically Designed</h3>
+          <p>Developed in collaboration with 500+ doctors and nurses to meet the real demands of healthcare environments.</p>
+        </div>
+        <div class="feature-card" id="feature-2">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🎨</div>
+          </div>
+          <h3>50+ Colors & Styles</h3>
+          <p>From classic navy to pastel lilac — find the color that matches your department, personality, or hospital protocol.</p>
+        </div>
+        <div class="feature-card" id="feature-3">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">📦</div>
+          </div>
+          <h3>Smart Pocket System</h3>
+          <p>Up to 9 strategically placed pockets with dedicated slots for pens, scissors, phones, and stethoscopes.</p>
+        </div>
+        <div class="feature-card" id="feature-4">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">♻️</div>
+          </div>
+          <h3>Sustainable Practices</h3>
+          <p>Eco-certified manufacturing processes and biodegradable packaging — because we care about the planet as much as you care for patients.</p>
+        </div>
+        <div class="feature-card" id="feature-5">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🏷️</div>
+          </div>
+          <h3>Bulk & Hospital Orders</h3>
+          <p>Special pricing for hospitals, clinics, and medical colleges. Custom embroidery and branding available on request.</p>
+        </div>
+        <div class="feature-card" id="feature-6">
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">📱</div>
+          </div>
+          <h3>MedWear App</h3>
+          <p>Track orders, save wishlist, get early access to new drops, and contact our 24/7 Breakpoint™ support team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Color Showcase Section -->
+  <section class="color-section" id="colors">
+    <div class="color-container">
+      <div class="section-header">
+        <div class="section-label">Shop By Color</div>
+        <h2 class="section-title">Every Shade, Your Story</h2>
+      </div>
+      <div class="color-palette">
+        <a href="#products" class="color-chip" style="--chip-color:#1c3a5e;" id="color-navy">
+          <div class="chip-swatch"></div>
+          <span>Navy</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#7c2035;" id="color-wine">
+          <div class="chip-swatch"></div>
+          <span>Wine</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#1a1a1a;" id="color-black">
+          <div class="chip-swatch"></div>
+          <span>Black</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#2d5a27;" id="color-forest">
+          <div class="chip-swatch"></div>
+          <span>Forest Green</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#9e9e9e;" id="color-heather">
+          <div class="chip-swatch"></div>
+          <span>Heather Grey</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#800000;" id="color-maroon">
+          <div class="chip-swatch"></div>
+          <span>Maroon</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#9e7b9b;" id="color-mauve">
+          <div class="chip-swatch"></div>
+          <span>Mauve</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#6b7c49;" id="color-olive">
+          <div class="chip-swatch"></div>
+          <span>Olive</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#8fa8c8;" id="color-ceil">
+          <div class="chip-swatch"></div>
+          <span>Ceil Blue</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#1e3d6b;" id="color-galaxy">
+          <div class="chip-swatch"></div>
+          <span>Galaxy Blue</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#c9b1d6;" id="color-lilac">
+          <div class="chip-swatch"></div>
+          <span>Pastel Lilac</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#e94f8b;" id="color-pink">
+          <div class="chip-swatch"></div>
+          <span>Hot Pink</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#44a08d;" id="color-euc">
+          <div class="chip-swatch"></div>
+          <span>Eucalyptus</span>
+        </a>
+        <a href="#products" class="color-chip" style="--chip-color:#5c5c5c;" id="color-charcoal">
+          <div class="chip-swatch"></div>
+          <span>Charcoal</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="section-header">
+        <div class="section-label">About Us</div>
+        <h2 class="about-title">About <span class="about-title-accent">MedWear</span></h2>
+        <p class="about-desc">We are a premium medical apparel brand crafted exclusively for healthcare professionals. Our mission is to blend clinical functionality with modern style — because the people who heal others deserve to feel and look their best every single day.</p>
+      </div>
+      <div class="about-cards">
+        <div class="about-card" id="about-card-1">
+          <div class="about-card-icon">🛡️</div>
+          <h3>Trusted Quality</h3>
+          <p>Clinically tested fabrics with 100+ wash durability and certified safe materials</p>
+        </div>
+        <div class="about-card" id="about-card-2">
+          <div class="about-card-icon">👩‍⚕️</div>
+          <h3>Expert Designed</h3>
+          <p>Co-created with 500+ doctors and nurses to meet real healthcare demands</p>
+        </div>
+        <div class="about-card" id="about-card-3">
+          <div class="about-card-icon">🕐</div>
+          <h3>24/7 Support</h3>
+          <p>Round-the-clock Breakpoint™ helpline for orders, returns, and styling advice</p>
+        </div>
+        <div class="about-card" id="about-card-4">
+          <div class="about-card-icon">💰</div>
+          <h3>Affordable Plans</h3>
+          <p>Transparent pricing with easy EMI options starting from just ₹433/month</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      <div class="section-header">
+        <div class="section-label">Get In Touch</div>
+        <h2 class="section-title">Contact Us</h2>
+        <p class="section-desc">Have a question about sizing, bulk orders, or custom embroidery? We'd love to hear from you!</p>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div>
+              <strong>Our Address</strong>
+              <span>MedWear HQ, Koramangala, Bangalore - 560034</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div>
+              <strong>WhatsApp / Call</strong>
+              <span>+91 98765 43210</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">✉️</div>
+            <div>
+              <strong>Email Us</strong>
+              <span>support@medwear.in</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🕐</div>
+            <div>
+              <strong>Working Hours</strong>
+              <span>Mon – Sat, 9:00 AM – 7:00 PM IST</span>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Name</label>
+              <input type="text" id="contact-name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="your.email@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" placeholder="+91 98765 43210" />
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="contact-submit-btn" id="contact-submit-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.484 2 12.017c0 1.988.522 3.853 1.433 5.467L2 22l4.651-1.408A9.955 9.955 0 0 0 12 22c5.522 0 10-4.477 10-10S17.522 2 11.999 2z"/></svg>
+              Send via WhatsApp
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section" id="reviews">
+    <div class="testimonials-container">
+      <div class="section-header">
+        <div class="section-label">Real Reviews</div>
+        <h2 class="section-title">What Healthcare Heroes Say</h2>
+        <div class="overall-rating">
+          <span class="big-stars">★★★★★</span>
+          <strong>4.8 / 5</strong>
+          <span>from 1,00,000+ reviews</span>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials-marquee-wrap">
+      <div class="testimonials-track">
+        <div class="testimonial-card" id="review-1">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"I've been wearing MedWear scrubs for 6 months and they still look brand new. The 4-way stretch makes 12-hour shifts actually bearable!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">Dr. P</div>
+            <div class="author-info">
+              <strong>Dr. Priya Sharma</strong>
+              <span>MBBS, Pediatrician · Mumbai</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card featured" id="review-2">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The pockets! Oh my god, finally scrubs with enough pockets. The mandarin collar set is my go-to for OPD. I get compliments every single day."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #e94f8b, #f4a5b5);">N. R</div>
+            <div class="author-info">
+              <strong>Nurse Rekha Nair</strong>
+              <span>Critical Care RN · Bangalore</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card" id="review-3">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Ordered the ecoflex™ joggers and lab coat together. The fabric is incredibly soft — nothing like the stiff scrubs we used to wear. Totally worth every rupee."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #44a08d, #2d5a27);">Dr. A</div>
+            <div class="author-info">
+              <strong>Dr. Anika Verma</strong>
+              <span>MD Anaesthesia · Delhi NCR</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card" id="review-4">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The DRIFT Jacket is an absolute game-changer for cold hospital nights. Stylish, warm, and fits perfectly. I wear it over my scrubs every single shift."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #5B3CC4, #7B5CE0);">Dr. S</div>
+            <div class="author-info">
+              <strong>Dr. Sneha Kulkarni</strong>
+              <span>MS Surgery · Pune</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card featured" id="review-5">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Ordered bulk scrubs for our entire ICU team — 30 sets! The custom embroidery looks incredibly professional and the team loves the colour range. MedWear is unmatched."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #f6917e, #ff6b47);">Dr. R</div>
+            <div class="author-info">
+              <strong>Dr. Rohan Mehta</strong>
+              <span>Head of ICU · Fortis Hospital, Delhi</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card" id="review-6">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"As a nurse working 12-hour shifts, comfort is non-negotiable. The Mandarin Collar scrub set has been my daily uniform for 4 months. Still fresh, still perfect!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #44a08d, #a8edea);">N. M</div>
+            <div class="author-info">
+              <strong>Nurse Meera Pillai</strong>
+              <span>Senior RN · Apollo Hospital, Chennai</span>
+            </div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+
+        <!-- Duplicate set for seamless loop -->
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"I've been wearing MedWear scrubs for 6 months and they still look brand new. The 4-way stretch makes 12-hour shifts actually bearable!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">Dr. P</div>
+            <div class="author-info"><strong>Dr. Priya Sharma</strong><span>MBBS, Pediatrician · Mumbai</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The pockets! Oh my god, finally scrubs with enough pockets. The mandarin collar set is my go-to for OPD. I get compliments every single day."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #e94f8b, #f4a5b5);">N. R</div>
+            <div class="author-info"><strong>Nurse Rekha Nair</strong><span>Critical Care RN · Bangalore</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Ordered the ecoflex™ joggers and lab coat together. The fabric is incredibly soft — nothing like the stiff scrubs we used to wear. Totally worth every rupee."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #44a08d, #2d5a27);">Dr. A</div>
+            <div class="author-info"><strong>Dr. Anika Verma</strong><span>MD Anaesthesia · Delhi NCR</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"The DRIFT Jacket is an absolute game-changer for cold hospital nights. Stylish, warm, and fits perfectly. I wear it over my scrubs every single shift."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #5B3CC4, #7B5CE0);">Dr. S</div>
+            <div class="author-info"><strong>Dr. Sneha Kulkarni</strong><span>MS Surgery · Pune</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card featured">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"Ordered bulk scrubs for our entire ICU team — 30 sets! The custom embroidery looks incredibly professional and the team loves the colour range. MedWear is unmatched."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #f6917e, #ff6b47);">Dr. R</div>
+            <div class="author-info"><strong>Dr. Rohan Mehta</strong><span>Head of ICU · Fortis Hospital, Delhi</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-rating">★★★★★</div>
+          <p class="testimonial-text">"As a nurse working 12-hour shifts, comfort is non-negotiable. The Mandarin Collar scrub set has been my daily uniform for 4 months. Still fresh, still perfect!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg, #44a08d, #a8edea);">N. M</div>
+            <div class="author-info"><strong>Nurse Meera Pillai</strong><span>Senior RN · Apollo Hospital, Chennai</span></div>
+          </div>
+          <div class="verified-badge">✓ Verified Purchase</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bulk / Hospital CTA Banner -->
+  <section class="bulk-section" id="bulk">
+    <div class="bulk-container">
+      <div class="bulk-content">
+        <div class="bulk-icon">🏨</div>
+        <h2>Outfit Your Entire Team</h2>
+        <p>Special rates for hospitals, clinics, nursing colleges and medical institutions. Custom logo embroidery and personalized branding available.</p>
+        <div class="bulk-perks">
+          <span>✓ Volume Discounts</span>
+          <span>✓ Custom Embroidery</span>
+          <span>✓ Dedicated Account Manager</span>
+          <span>✓ Priority Delivery</span>
+        </div>
+        <a href="#contact" class="btn-primary-white" id="bulk-cta-btn">Request Bulk Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-icon">✚</span>
+          <span class="logo-text">MedWear</span>
+        </div>
+        <p class="footer-tagline">Designed for those who dedicate their lives to healing others.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-link" id="social-instagram" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-facebook" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-twitter" aria-label="Twitter">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+          </a>
+          <a href="#" class="social-link" id="social-youtube" aria-label="YouTube">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.95C5.12 20 12 20 12 20s6.88 0 8.59-.47a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Women's Shop</h4>
+        <a href="#scrubs">Scrubs</a>
+        <a href="#lab-coats">Lab Coats</a>
+        <a href="#apparel">DRIFT Jacket</a>
+        <a href="#accessories">Stethoscopes</a>
+        <a href="#scrubs">Plus Size Scrubs</a>
+        <a href="#scrubs">Nurse Scrubs</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Quick Links</h4>
+        <a href="#about">About Us</a>
+        <a href="#bulk">Bulk Orders</a>
+        <a href="#refer">Refer & Earn</a>
+        <a href="#track">Track Order</a>
+        <a href="#blog">Blogs</a>
+        <a href="#locator">Find a Store</a>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Support</h4>
+        <a href="#returns">Returns Policy</a>
+        <a href="#shipping">Shipping Info</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#breakpoint">Breakpoint 24/7 Helpline</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 MedWear. All rights reserved. | <a href="#privacy">Privacy</a> | <a href="#terms">Terms</a></p>
+      <div class="payment-icons">
+        <span>💳 Visa</span>
+        <span>💳 Mastercard</span>
+        <span>📱 UPI</span>
+        <span>🏦 NetBanking</span>
+        <span>📦 COD</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Bag</h3>
+      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart">✕</button>
+    </div>
+    <div class="cart-items" id="cart-items">
+      <div class="cart-empty" id="cart-empty">
+        <div class="cart-empty-icon">🛍️</div>
+        <p>Your bag is empty</p>
+        <a href="#products" class="btn-primary" id="cart-shop-btn">Start Shopping</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+      <button class="btn-primary checkout-btn" id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </div>
+  <div class="cart-overlay" id="cart-overlay"></div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="quick-view-modal" id="quick-view-modal">
+      <button class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Populated via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Refer Widget -->
+  <div class="refer-widget" id="refer-widget">
+    <a href="#refer" id="refer-link">Refer & Earn ₹200 →</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
